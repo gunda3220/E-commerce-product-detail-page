@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display:flex;
+  width:100%;
+  height:auto;
+  padding:20px 30px;
+  position:fixed;
+  align-items: center;
+  box-shadow: 0px 0px 2px 2px #1e1e1e;
+  z-index:3;
+  background-color: white;
+}
+nav ul{
+  list-style: none;
+  display:flex;
+  width:20%;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.left-ul{
+  margin-left: 0px;
+  margin-right:auto;
+}
+.right-ul{
+  margin-right:0;
+  margin-left:auto;
+}
+nav h1{
+  margin:auto;
+}
+.wrapper{
+  position:relative;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: flex-start;
+  background-color: #f5f5dc40;
+}
+.sub-images{
+  position:fixed;
+  display:flex;
+  flex-direction: column;
+  z-index:2;
+  left:50px;
+  top:55%;
+  transform:translateY(-50%);
+  height:auto;
+  opacity:0;
+  transition:opacity 0.3s ease-in-out;
+}
+.sub-images.stick-bottom{
+  position:absolute;
+  height:auto;
+  transform:translateY(0%);
+  top:auto;
+}
+.sub-images img{
+  position:relative;
+  width:60px;
+  height:auto;
+  margin:5px 0;
+  box-shadow: 0px 0px 1px #1e1e1e;
+}
+.image-wrapper{
+  position:relative;
+  width:50%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+}
+.image-wrapper img{
+  width:100%;
+  height:auto;
+}
+.content-wrapper{
+  width:50%;
+  padding:50px;
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translateY(-50%);
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  min-height:60vh;
+}
+.content-wrapper.stick-bottom{
+  position:absolute;
+  top:auto;
+  bottom:100px;
+}
+.content-wrapper p{
+  margin-top:30px;
+}
+.wrapper1{
+  position:relative;
+  width:100%;
+  padding:100px;
+  z-index:3;
+}
+.content-wrapper ul{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width:80%;
+  margin-top:40px;
+  margin-bottom:30px;
+}
+.content-wrapper ul li{
+  cursor: pointer;
+}
+.content-wrapper ul li.active{
+  text-decoration: underline;
+}
+.content-wrapper .content-tab{
+  display:none;
+}
+.content-wrapper .content-tab.active{
+  display:block;
+}
+.size-selection{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.size-selection input{
+  margin-right:20px;
+  margin-left:5px;
+}
+.color-selection{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.color-selection input{
+  margin-right:20px;
+  margin-left:5px;
+}
+.content-tab h3{
+  margin:15px 0;
+}
+
+#note{
+  position:absolute;
+  bottom:10px;
+}
+#note a{
+  text-decoration:none;
+}
